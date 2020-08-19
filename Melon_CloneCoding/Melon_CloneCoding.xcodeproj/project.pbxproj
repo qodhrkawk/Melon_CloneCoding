@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		789184A4888211C8BA6240F2 /* Pods_Melon_CloneCoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAAE1C36E01E66166EA1AF18 /* Pods_Melon_CloneCoding.framework */; };
+		EC7F87D224ED63C00029248C /* UpperTabCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7F87D124ED63C00029248C /* UpperTabCVC.swift */; };
+		EC7F87D624ED67B30029248C /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7F87D524ED67B30029248C /* UIColorExtensions.swift */; };
+		EC80C77924E504C000BA213A /* UpperTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80C77824E504C000BA213A /* UpperTabVC.swift */; };
 		EC8F7D6F24E1905100C9D96F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8F7D6E24E1905100C9D96F /* AppDelegate.swift */; };
 		EC8F7D7124E1905100C9D96F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8F7D7024E1905100C9D96F /* SceneDelegate.swift */; };
 		EC8F7D7324E1905100C9D96F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8F7D7224E1905100C9D96F /* ViewController.swift */; };
-		EC8F7D7624E1905100C9D96F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8F7D7424E1905100C9D96F /* Main.storyboard */; };
+		EC8F7D7624E1905100C9D96F /* UpperTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8F7D7424E1905100C9D96F /* UpperTab.storyboard */; };
 		EC8F7D7824E1905200C9D96F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC8F7D7724E1905200C9D96F /* Assets.xcassets */; };
 		EC8F7D7B24E1905200C9D96F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8F7D7924E1905200C9D96F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,11 +23,14 @@
 		716A8399D6E7FB8D9ED09563 /* Pods-Melon_CloneCoding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Melon_CloneCoding.debug.xcconfig"; path = "Target Support Files/Pods-Melon_CloneCoding/Pods-Melon_CloneCoding.debug.xcconfig"; sourceTree = "<group>"; };
 		C9EE17BFA6E56B9F8D17DE64 /* Pods-Melon_CloneCoding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Melon_CloneCoding.release.xcconfig"; path = "Target Support Files/Pods-Melon_CloneCoding/Pods-Melon_CloneCoding.release.xcconfig"; sourceTree = "<group>"; };
 		EAAE1C36E01E66166EA1AF18 /* Pods_Melon_CloneCoding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Melon_CloneCoding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7F87D124ED63C00029248C /* UpperTabCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperTabCVC.swift; sourceTree = "<group>"; };
+		EC7F87D524ED67B30029248C /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		EC80C77824E504C000BA213A /* UpperTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperTabVC.swift; sourceTree = "<group>"; };
 		EC8F7D6B24E1905100C9D96F /* Melon_CloneCoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Melon_CloneCoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8F7D6E24E1905100C9D96F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC8F7D7024E1905100C9D96F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EC8F7D7224E1905100C9D96F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC8F7D7524E1905100C9D96F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC8F7D7524E1905100C9D96F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UpperTab.storyboard; sourceTree = "<group>"; };
 		EC8F7D7724E1905200C9D96F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC8F7D7A24E1905200C9D96F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC8F7D7C24E1905200C9D96F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +55,46 @@
 				C9EE17BFA6E56B9F8D17DE64 /* Pods-Melon_CloneCoding.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC7F87D024ED636E0029248C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EC7F87D324ED65330029248C /* UpperTab */,
+				EC7F87D124ED63C00029248C /* UpperTabCVC.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EC7F87D324ED65330029248C /* UpperTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UpperTab;
+			sourceTree = "<group>";
+		};
+		EC7F87D424ED67940029248C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EC7F87D524ED67B30029248C /* UIColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EC80C77624E5049F00BA213A /* UpperTab */ = {
+			isa = PBXGroup;
+			children = (
+				EC8F7D7424E1905100C9D96F /* UpperTab.storyboard */,
+			);
+			path = UpperTab;
+			sourceTree = "<group>";
+		};
+		EC80C77724E504AB00BA213A /* UpperTab */ = {
+			isa = PBXGroup;
+			children = (
+				EC80C77824E504C000BA213A /* UpperTabVC.swift */,
+			);
+			path = UpperTab;
 			sourceTree = "<group>";
 		};
 		EC8F7D6224E1905100C9D96F = {
@@ -85,6 +131,8 @@
 		EC8F7D8224E1915900C9D96F /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				EC7F87D424ED67940029248C /* Extensions */,
+				EC7F87D024ED636E0029248C /* Cells */,
 				EC8F7D8624E1921B00C9D96F /* VCs */,
 			);
 			path = Source;
@@ -102,8 +150,8 @@
 		EC8F7D8424E191B400C9D96F /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				EC80C77624E5049F00BA213A /* UpperTab */,
 				EC8F7D7924E1905200C9D96F /* LaunchScreen.storyboard */,
-				EC8F7D7424E1905100C9D96F /* Main.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -118,6 +166,7 @@
 		EC8F7D8624E1921B00C9D96F /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				EC80C77724E504AB00BA213A /* UpperTab */,
 				EC8F7D7224E1905100C9D96F /* ViewController.swift */,
 			);
 			path = VCs;
@@ -193,7 +242,7 @@
 			files = (
 				EC8F7D7B24E1905200C9D96F /* LaunchScreen.storyboard in Resources */,
 				EC8F7D7824E1905200C9D96F /* Assets.xcassets in Resources */,
-				EC8F7D7624E1905100C9D96F /* Main.storyboard in Resources */,
+				EC8F7D7624E1905100C9D96F /* UpperTab.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC7F87D224ED63C00029248C /* UpperTabCVC.swift in Sources */,
+				EC80C77924E504C000BA213A /* UpperTabVC.swift in Sources */,
 				EC8F7D7324E1905100C9D96F /* ViewController.swift in Sources */,
+				EC7F87D624ED67B30029248C /* UIColorExtensions.swift in Sources */,
 				EC8F7D6F24E1905100C9D96F /* AppDelegate.swift in Sources */,
 				EC8F7D7124E1905100C9D96F /* SceneDelegate.swift in Sources */,
 			);
@@ -255,12 +307,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EC8F7D7424E1905100C9D96F /* Main.storyboard */ = {
+		EC8F7D7424E1905100C9D96F /* UpperTab.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EC8F7D7524E1905100C9D96F /* Base */,
 			);
-			name = Main.storyboard;
+			name = UpperTab.storyboard;
 			sourceTree = "<group>";
 		};
 		EC8F7D7924E1905200C9D96F /* LaunchScreen.storyboard */ = {

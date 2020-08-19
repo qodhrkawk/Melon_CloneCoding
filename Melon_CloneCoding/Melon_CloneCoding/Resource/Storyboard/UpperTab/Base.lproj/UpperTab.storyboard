@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Upper TabVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="UpperTabVC" id="BYZ-38-t0r" customClass="UpperTabVC" customModule="Melon_CloneCoding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="melonIcon" translatesAutoresizingMaskIntoConstraints="NO" id="sj7-88-jGU">
+                                <rect key="frame" x="147.66666666666666" y="44" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FkW-P9-q7q"/>
+                                    <constraint firstAttribute="width" constant="80" id="ask-py-aIl"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ij8-mv-Gof">
+                                <rect key="frame" x="330" y="44" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="77k-aI-8Jd"/>
+                                    <constraint firstAttribute="width" constant="40" id="yIb-zU-BdY"/>
+                                </constraints>
+                                <state key="normal" image="menuButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqf-sK-kUP">
+                                <rect key="frame" x="290" y="44" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eiC-Tv-H8F"/>
+                                    <constraint firstAttribute="width" constant="40" id="xBX-Hm-8Ph"/>
+                                </constraints>
+                                <state key="normal" image="searchButton"/>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2te-Pm-GlO">
+                                <rect key="frame" x="0.0" y="94" width="375" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="oiz-Wt-4us"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wBA-z3-TM2">
+                                    <size key="itemSize" width="103" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UpperTabCell" id="aQa-vU-Xkq" customClass="UpperTabCVC" customModule="Melon_CloneCoding" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="103" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="n8f-rF-F8k">
+                                            <rect key="frame" x="0.0" y="0.0" width="103" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uf6-xk-gcV" customClass="하지만">
+                                                    <rect key="frame" x="27.666666666666671" y="13" width="48" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uf6-xk-gcV" firstAttribute="centerX" secondItem="n8f-rF-F8k" secondAttribute="centerX" id="1Yc-Am-ig1"/>
+                                                <constraint firstItem="uf6-xk-gcV" firstAttribute="centerY" secondItem="n8f-rF-F8k" secondAttribute="centerY" id="m3Q-B9-ZUa"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="103" height="50"/>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="uf6-xk-gcV" id="0Jw-pI-vdx"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sj7-88-jGU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2eV-Cf-FN2"/>
+                            <constraint firstItem="ij8-mv-Gof" firstAttribute="leading" secondItem="yqf-sK-kUP" secondAttribute="trailing" id="RTp-zI-CuL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2te-Pm-GlO" secondAttribute="trailing" id="RjH-FX-0J9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ij8-mv-Gof" secondAttribute="trailing" constant="5" id="UtT-JO-tgz"/>
+                            <constraint firstItem="ij8-mv-Gof" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WRT-Yz-Ol3"/>
+                            <constraint firstItem="2te-Pm-GlO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YVO-0j-rly"/>
+                            <constraint firstItem="yqf-sK-kUP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="o9o-Aa-kwe"/>
+                            <constraint firstItem="2te-Pm-GlO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="qPZ-E3-x9J"/>
+                            <constraint firstItem="sj7-88-jGU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qST-fg-RCS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="upperTabCV" destination="2te-Pm-GlO" id="6J1-Sa-lTW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="137.4384236453202"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="melonIcon" width="314" height="126"/>
+        <image name="menuButton" width="98" height="80"/>
+        <image name="searchButton" width="104" height="92"/>
+    </resources>
+</document>
