@@ -78,15 +78,25 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ATG-Zn-Wfq">
+                                <rect key="frame" x="0.0" y="144" width="375" height="668"/>
+                                <connections>
+                                    <segue destination="9wu-Ce-DSw" kind="embed" id="3RT-vs-CO5"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="ATG-Zn-Wfq" firstAttribute="top" secondItem="2te-Pm-GlO" secondAttribute="bottom" id="1Jp-L2-MvW"/>
                             <constraint firstItem="sj7-88-jGU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2eV-Cf-FN2"/>
+                            <constraint firstAttribute="bottom" secondItem="ATG-Zn-Wfq" secondAttribute="bottom" id="4rw-EK-UDT"/>
                             <constraint firstItem="ij8-mv-Gof" firstAttribute="leading" secondItem="yqf-sK-kUP" secondAttribute="trailing" id="RTp-zI-CuL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2te-Pm-GlO" secondAttribute="trailing" id="RjH-FX-0J9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ij8-mv-Gof" secondAttribute="trailing" constant="5" id="UtT-JO-tgz"/>
                             <constraint firstItem="ij8-mv-Gof" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WRT-Yz-Ol3"/>
                             <constraint firstItem="2te-Pm-GlO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YVO-0j-rly"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ATG-Zn-Wfq" secondAttribute="trailing" id="gVx-vZ-xHC"/>
+                            <constraint firstItem="ATG-Zn-Wfq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="l3T-0f-zKJ"/>
                             <constraint firstItem="yqf-sK-kUP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="o9o-Aa-kwe"/>
                             <constraint firstItem="2te-Pm-GlO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="qPZ-E3-x9J"/>
                             <constraint firstItem="sj7-88-jGU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qST-fg-RCS"/>
@@ -100,6 +110,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.40000000000001" y="137.4384236453202"/>
+        </scene>
+        <!--Upper PageVC-->
+        <scene sceneID="J4G-hn-vP6">
+            <objects>
+                <viewController id="9wu-Ce-DSw" customClass="UpperPageVC" customModule="Melon_CloneCoding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1XW-Rj-6e9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XIl-lY-c0Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023" y="178"/>
         </scene>
     </scenes>
     <resources>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		789184A4888211C8BA6240F2 /* Pods_Melon_CloneCoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAAE1C36E01E66166EA1AF18 /* Pods_Melon_CloneCoding.framework */; };
+		EC7F83A724F535EE009A1400 /* UpperPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7F83A624F535EE009A1400 /* UpperPageVC.swift */; };
 		EC7F87D224ED63C00029248C /* UpperTabCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7F87D124ED63C00029248C /* UpperTabCVC.swift */; };
 		EC7F87D624ED67B30029248C /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7F87D524ED67B30029248C /* UIColorExtensions.swift */; };
 		EC80C77924E504C000BA213A /* UpperTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80C77824E504C000BA213A /* UpperTabVC.swift */; };
@@ -23,6 +24,7 @@
 		716A8399D6E7FB8D9ED09563 /* Pods-Melon_CloneCoding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Melon_CloneCoding.debug.xcconfig"; path = "Target Support Files/Pods-Melon_CloneCoding/Pods-Melon_CloneCoding.debug.xcconfig"; sourceTree = "<group>"; };
 		C9EE17BFA6E56B9F8D17DE64 /* Pods-Melon_CloneCoding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Melon_CloneCoding.release.xcconfig"; path = "Target Support Files/Pods-Melon_CloneCoding/Pods-Melon_CloneCoding.release.xcconfig"; sourceTree = "<group>"; };
 		EAAE1C36E01E66166EA1AF18 /* Pods_Melon_CloneCoding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Melon_CloneCoding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7F83A624F535EE009A1400 /* UpperPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperPageVC.swift; sourceTree = "<group>"; };
 		EC7F87D124ED63C00029248C /* UpperTabCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperTabCVC.swift; sourceTree = "<group>"; };
 		EC7F87D524ED67B30029248C /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		EC80C77824E504C000BA213A /* UpperTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperTabVC.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				EC80C77824E504C000BA213A /* UpperTabVC.swift */,
+				EC7F83A624F535EE009A1400 /* UpperPageVC.swift */,
 			);
 			path = UpperTab;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC7F83A724F535EE009A1400 /* UpperPageVC.swift in Sources */,
 				EC7F87D224ED63C00029248C /* UpperTabCVC.swift in Sources */,
 				EC80C77924E504C000BA213A /* UpperTabVC.swift in Sources */,
 				EC8F7D7324E1905100C9D96F /* ViewController.swift in Sources */,
