@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		789184A4888211C8BA6240F2 /* Pods_Melon_CloneCoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAAE1C36E01E66166EA1AF18 /* Pods_Melon_CloneCoding.framework */; };
 		EC7F83A724F535EE009A1400 /* UpperPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7F83A624F535EE009A1400 /* UpperPageVC.swift */; };
+		EC7F83AA24F53A07009A1400 /* MusicMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7F83A924F53A07009A1400 /* MusicMain.storyboard */; };
+		EC7F83AD24F53A4B009A1400 /* MusicMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7F83AC24F53A4B009A1400 /* MusicMainVC.swift */; };
+		EC7F83B024F53B26009A1400 /* MyTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7F83AF24F53B26009A1400 /* MyTab.storyboard */; };
+		EC7F83B324F53B6A009A1400 /* MyTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7F83B224F53B6A009A1400 /* MyTabVC.swift */; };
+		EC7F83B624F53BCC009A1400 /* DJTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7F83B524F53BCC009A1400 /* DJTab.storyboard */; };
+		EC7F83B924F53BF5009A1400 /* DJTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7F83B824F53BF5009A1400 /* DJTabVC.swift */; };
 		EC7F87D224ED63C00029248C /* UpperTabCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7F87D124ED63C00029248C /* UpperTabCVC.swift */; };
 		EC7F87D624ED67B30029248C /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7F87D524ED67B30029248C /* UIColorExtensions.swift */; };
 		EC80C77924E504C000BA213A /* UpperTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80C77824E504C000BA213A /* UpperTabVC.swift */; };
@@ -25,6 +31,12 @@
 		C9EE17BFA6E56B9F8D17DE64 /* Pods-Melon_CloneCoding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Melon_CloneCoding.release.xcconfig"; path = "Target Support Files/Pods-Melon_CloneCoding/Pods-Melon_CloneCoding.release.xcconfig"; sourceTree = "<group>"; };
 		EAAE1C36E01E66166EA1AF18 /* Pods_Melon_CloneCoding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Melon_CloneCoding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC7F83A624F535EE009A1400 /* UpperPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperPageVC.swift; sourceTree = "<group>"; };
+		EC7F83A924F53A07009A1400 /* MusicMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MusicMain.storyboard; sourceTree = "<group>"; };
+		EC7F83AC24F53A4B009A1400 /* MusicMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicMainVC.swift; sourceTree = "<group>"; };
+		EC7F83AF24F53B26009A1400 /* MyTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyTab.storyboard; sourceTree = "<group>"; };
+		EC7F83B224F53B6A009A1400 /* MyTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabVC.swift; sourceTree = "<group>"; };
+		EC7F83B524F53BCC009A1400 /* DJTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DJTab.storyboard; sourceTree = "<group>"; };
+		EC7F83B824F53BF5009A1400 /* DJTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJTabVC.swift; sourceTree = "<group>"; };
 		EC7F87D124ED63C00029248C /* UpperTabCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperTabCVC.swift; sourceTree = "<group>"; };
 		EC7F87D524ED67B30029248C /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		EC80C77824E504C000BA213A /* UpperTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperTabVC.swift; sourceTree = "<group>"; };
@@ -57,6 +69,54 @@
 				C9EE17BFA6E56B9F8D17DE64 /* Pods-Melon_CloneCoding.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC7F83A824F539E8009A1400 /* MusicMain */ = {
+			isa = PBXGroup;
+			children = (
+				EC7F83A924F53A07009A1400 /* MusicMain.storyboard */,
+			);
+			path = MusicMain;
+			sourceTree = "<group>";
+		};
+		EC7F83AB24F53A2D009A1400 /* MusicMain */ = {
+			isa = PBXGroup;
+			children = (
+				EC7F83AC24F53A4B009A1400 /* MusicMainVC.swift */,
+			);
+			path = MusicMain;
+			sourceTree = "<group>";
+		};
+		EC7F83AE24F53B0E009A1400 /* MyTab */ = {
+			isa = PBXGroup;
+			children = (
+				EC7F83AF24F53B26009A1400 /* MyTab.storyboard */,
+			);
+			path = MyTab;
+			sourceTree = "<group>";
+		};
+		EC7F83B124F53B54009A1400 /* MyTab */ = {
+			isa = PBXGroup;
+			children = (
+				EC7F83B224F53B6A009A1400 /* MyTabVC.swift */,
+			);
+			path = MyTab;
+			sourceTree = "<group>";
+		};
+		EC7F83B424F53BB8009A1400 /* DJTab */ = {
+			isa = PBXGroup;
+			children = (
+				EC7F83B524F53BCC009A1400 /* DJTab.storyboard */,
+			);
+			path = DJTab;
+			sourceTree = "<group>";
+		};
+		EC7F83B724F53BE4009A1400 /* DJTab */ = {
+			isa = PBXGroup;
+			children = (
+				EC7F83B824F53BF5009A1400 /* DJTabVC.swift */,
+			);
+			path = DJTab;
 			sourceTree = "<group>";
 		};
 		EC7F87D024ED636E0029248C /* Cells */ = {
@@ -153,6 +213,9 @@
 		EC8F7D8424E191B400C9D96F /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				EC7F83B424F53BB8009A1400 /* DJTab */,
+				EC7F83AE24F53B0E009A1400 /* MyTab */,
+				EC7F83A824F539E8009A1400 /* MusicMain */,
 				EC80C77624E5049F00BA213A /* UpperTab */,
 				EC8F7D7924E1905200C9D96F /* LaunchScreen.storyboard */,
 			);
@@ -169,6 +232,9 @@
 		EC8F7D8624E1921B00C9D96F /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				EC7F83B724F53BE4009A1400 /* DJTab */,
+				EC7F83B124F53B54009A1400 /* MyTab */,
+				EC7F83AB24F53A2D009A1400 /* MusicMain */,
 				EC80C77724E504AB00BA213A /* UpperTab */,
 				EC8F7D7224E1905100C9D96F /* ViewController.swift */,
 			);
@@ -243,8 +309,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC7F83B024F53B26009A1400 /* MyTab.storyboard in Resources */,
 				EC8F7D7B24E1905200C9D96F /* LaunchScreen.storyboard in Resources */,
+				EC7F83AA24F53A07009A1400 /* MusicMain.storyboard in Resources */,
 				EC8F7D7824E1905200C9D96F /* Assets.xcassets in Resources */,
+				EC7F83B624F53BCC009A1400 /* DJTab.storyboard in Resources */,
 				EC8F7D7624E1905100C9D96F /* UpperTab.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,9 +370,12 @@
 				EC7F83A724F535EE009A1400 /* UpperPageVC.swift in Sources */,
 				EC7F87D224ED63C00029248C /* UpperTabCVC.swift in Sources */,
 				EC80C77924E504C000BA213A /* UpperTabVC.swift in Sources */,
+				EC7F83AD24F53A4B009A1400 /* MusicMainVC.swift in Sources */,
 				EC8F7D7324E1905100C9D96F /* ViewController.swift in Sources */,
 				EC7F87D624ED67B30029248C /* UIColorExtensions.swift in Sources */,
+				EC7F83B924F53BF5009A1400 /* DJTabVC.swift in Sources */,
 				EC8F7D6F24E1905100C9D96F /* AppDelegate.swift in Sources */,
+				EC7F83B324F53B6A009A1400 /* MyTabVC.swift in Sources */,
 				EC8F7D7124E1905100C9D96F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

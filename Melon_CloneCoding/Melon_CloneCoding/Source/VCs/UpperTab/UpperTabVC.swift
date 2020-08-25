@@ -14,6 +14,11 @@ class UpperTabVC: UIViewController {
     let tabTitles = ["뮤직" , "MY", "DJ"]
     
     @IBOutlet weak var upperTabCV: UICollectionView!
+    @IBOutlet weak var containPage: UIView!
+    var pageInstance : UpperPageVC?
+    
+    var nowIdx = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +26,25 @@ class UpperTabVC: UIViewController {
         upperTabCV.delegate = self
         upperTabCV.dataSource = self
         upperTabCV.reloadData()
+        
+        let firstIndexPath = IndexPath(item : 0, section : 0)
+        collectionView(upperTabCV, didSelectItemAt: firstIndexPath)
+        upperTabCV.selectItem(at: firstIndexPath, animated: false, scrollPosition: .right)
+        
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "pageSegue"{
+            pageInstance = segue.destination as? UpperPageVC
+        }
+        
+        
+    }
+    
+    func something(){
+        let secondIndexPath = IndexPath(item : 1, section : 0)
+        upperTabCV.selectItem(at: secondIndexPath, animated: true, scrollPosition: .right)
     }
     
     
@@ -43,6 +67,7 @@ extension UpperTabVC : UICollectionViewDelegate, UICollectionViewDataSource, UIC
                     return UICollectionViewCell()}
             
             titleCell.setTitle(title: tabTitles[indexPath.item])
+           
             
             return titleCell
     }
@@ -71,8 +96,25 @@ extension UpperTabVC : UICollectionViewDelegate, UICollectionViewDataSource, UIC
         return 10
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-       
         
+        
+       guard let titleCell = collectionView.dequeueReusableCell(
+       withReuseIdentifier: UpperTabCVC.identifier,
+       for: indexPath) as? UpperTabCVC else {
+           
+           return }
+        
+        titleCell.isSelected = true
+        if(nowIdx < indexPath.item){
+            pageInstance?.setViewControllers([(pageInstance?.VCArray[indexPath.item])!], direction: .forward,
+            animated: true, completion: nil)
+        }
+        else if (nowIdx > indexPath.item){
+            pageInstance?.setViewControllers([(pageInstance?.VCArray[indexPath.item])!], direction: .reverse,
+            animated: true, completion: nil)
+            something()
+        }
+        nowIdx = indexPath.item
         
         
         
@@ -81,3 +123,4 @@ extension UpperTabVC : UICollectionViewDelegate, UICollectionViewDataSource, UIC
     
     
 }
+

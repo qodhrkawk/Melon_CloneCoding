@@ -34,6 +34,7 @@ class UpperTabCVC: UICollectionViewCell {
         }
         
     }
+        
     
     override func prepareForReuse() {
         isSelected = false
