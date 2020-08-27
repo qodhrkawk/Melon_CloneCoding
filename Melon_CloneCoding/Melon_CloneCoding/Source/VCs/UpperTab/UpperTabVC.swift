@@ -38,7 +38,7 @@ class UpperTabVC: UIViewController {
         if segue.identifier == "pageSegue"{
             pageInstance = segue.destination as? UpperPageVC
         }
-        
+        pageInstance?.cvcDelegate = self
         
     }
     
@@ -103,16 +103,18 @@ extension UpperTabVC : UICollectionViewDelegate, UICollectionViewDataSource, UIC
        for: indexPath) as? UpperTabCVC else {
            
            return }
-        
+
         titleCell.isSelected = true
+        titleCell.setSelected()
         if(nowIdx < indexPath.item){
             pageInstance?.setViewControllers([(pageInstance?.VCArray[indexPath.item])!], direction: .forward,
             animated: true, completion: nil)
+            print("here1")
         }
         else if (nowIdx > indexPath.item){
             pageInstance?.setViewControllers([(pageInstance?.VCArray[indexPath.item])!], direction: .reverse,
             animated: true, completion: nil)
-            something()
+            print("here2")
         }
         nowIdx = indexPath.item
         
@@ -124,3 +126,14 @@ extension UpperTabVC : UICollectionViewDelegate, UICollectionViewDataSource, UIC
     
 }
 
+extension UpperTabVC : SelectCVCDelegate {
+    
+    func setCVC(index : Int) {
+        let myIndexPath = IndexPath(item : index, section : 0)
+//        collectionView(upperTabCV, didSelectItemAt: firstIndexPath)
+        print(index)
+        upperTabCV.selectItem(at: myIndexPath, animated: false, scrollPosition: .right)
+
+    }
+    
+}

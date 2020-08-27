@@ -34,6 +34,11 @@ class UpperTabCVC: UICollectionViewCell {
         }
         
     }
+    
+    func setSelected(){
+        titleLabel.textColor = .softGreen
+        
+    }
         
     
     override func prepareForReuse() {

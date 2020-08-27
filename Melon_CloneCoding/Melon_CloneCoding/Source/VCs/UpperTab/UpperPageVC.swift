@@ -10,7 +10,7 @@ import UIKit
 
 class UpperPageVC: UIPageViewController {
     
-    
+    var cvcDelegate : SelectCVCDelegate?
 
     let identifiers : NSArray = ["MusicMainVC", "MyTabVC", "DJTabVC"]
 
@@ -65,6 +65,9 @@ extension UpperPageVC : UIPageViewControllerDelegate, UIPageViewControllerDataSo
                 return nil
         }
         
+        print("aa")
+        cvcDelegate?.setCVC(index: prevIdx+1)
+        
         if(prevIdx < 0){
             return nil
             
@@ -75,7 +78,7 @@ extension UpperPageVC : UIPageViewControllerDelegate, UIPageViewControllerDataSo
 //            vcName.something()
 //            vcName.upperTabCV.selectItem(at: cIdx, animated: true, scrollPosition: .left)
             
-            vcName.something()
+//            vcName.something()
             
             return VCArray[prevIdx]
         }
@@ -90,8 +93,17 @@ extension UpperPageVC : UIPageViewControllerDelegate, UIPageViewControllerDataSo
         guard let vcIdx = VCArray.firstIndex(of: viewController) else {return nil}
         
         let nextIdx = vcIdx + 1
+        print("aa")
+        cvcDelegate?.setCVC(index: nextIdx-1)
+        if(nextIdx >= VCArray.count){
+            return nil
+        }
+        else{
+         
+            return VCArray[nextIdx]
+        }
         
-        return nextIdx >= VCArray.count ? nil : VCArray[nextIdx]
+     
         
         
         
@@ -102,6 +114,14 @@ extension UpperPageVC : UIPageViewControllerDelegate, UIPageViewControllerDataSo
     
     
     
+    
+    
+}
+
+
+
+protocol SelectCVCDelegate : class{
+    func setCVC(index : Int)
     
     
 }
