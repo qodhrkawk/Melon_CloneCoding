@@ -18,6 +18,8 @@
 		EC7F87D224ED63C00029248C /* UpperTabCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7F87D124ED63C00029248C /* UpperTabCVC.swift */; };
 		EC7F87D624ED67B30029248C /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7F87D524ED67B30029248C /* UIColorExtensions.swift */; };
 		EC80C77924E504C000BA213A /* UpperTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80C77824E504C000BA213A /* UpperTabVC.swift */; };
+		EC88949E24F7EDC2006DFC69 /* RecentMusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC88949D24F7EDC2006DFC69 /* RecentMusicCell.swift */; };
+		EC8894A024F7F5BA006DFC69 /* RecentMusicCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC88949F24F7F5BA006DFC69 /* RecentMusicCVC.swift */; };
 		EC8F7D6F24E1905100C9D96F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8F7D6E24E1905100C9D96F /* AppDelegate.swift */; };
 		EC8F7D7124E1905100C9D96F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8F7D7024E1905100C9D96F /* SceneDelegate.swift */; };
 		EC8F7D7324E1905100C9D96F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8F7D7224E1905100C9D96F /* ViewController.swift */; };
@@ -40,6 +42,8 @@
 		EC7F87D124ED63C00029248C /* UpperTabCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperTabCVC.swift; sourceTree = "<group>"; };
 		EC7F87D524ED67B30029248C /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		EC80C77824E504C000BA213A /* UpperTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperTabVC.swift; sourceTree = "<group>"; };
+		EC88949D24F7EDC2006DFC69 /* RecentMusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMusicCell.swift; sourceTree = "<group>"; };
+		EC88949F24F7F5BA006DFC69 /* RecentMusicCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMusicCVC.swift; sourceTree = "<group>"; };
 		EC8F7D6B24E1905100C9D96F /* Melon_CloneCoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Melon_CloneCoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8F7D6E24E1905100C9D96F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC8F7D7024E1905100C9D96F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,7 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				EC7F87D324ED65330029248C /* UpperTab */,
-				EC7F87D124ED63C00029248C /* UpperTabCVC.swift */,
+				EC88949C24F7ED89006DFC69 /* MusicMain */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -131,6 +135,7 @@
 		EC7F87D324ED65330029248C /* UpperTab */ = {
 			isa = PBXGroup;
 			children = (
+				EC7F87D124ED63C00029248C /* UpperTabCVC.swift */,
 			);
 			path = UpperTab;
 			sourceTree = "<group>";
@@ -158,6 +163,15 @@
 				EC7F83A624F535EE009A1400 /* UpperPageVC.swift */,
 			);
 			path = UpperTab;
+			sourceTree = "<group>";
+		};
+		EC88949C24F7ED89006DFC69 /* MusicMain */ = {
+			isa = PBXGroup;
+			children = (
+				EC88949D24F7EDC2006DFC69 /* RecentMusicCell.swift */,
+				EC88949F24F7F5BA006DFC69 /* RecentMusicCVC.swift */,
+			);
+			path = MusicMain;
 			sourceTree = "<group>";
 		};
 		EC8F7D6224E1905100C9D96F = {
@@ -372,11 +386,13 @@
 				EC80C77924E504C000BA213A /* UpperTabVC.swift in Sources */,
 				EC7F83AD24F53A4B009A1400 /* MusicMainVC.swift in Sources */,
 				EC8F7D7324E1905100C9D96F /* ViewController.swift in Sources */,
+				EC8894A024F7F5BA006DFC69 /* RecentMusicCVC.swift in Sources */,
 				EC7F87D624ED67B30029248C /* UIColorExtensions.swift in Sources */,
 				EC7F83B924F53BF5009A1400 /* DJTabVC.swift in Sources */,
 				EC8F7D6F24E1905100C9D96F /* AppDelegate.swift in Sources */,
 				EC7F83B324F53B6A009A1400 /* MyTabVC.swift in Sources */,
 				EC8F7D7124E1905100C9D96F /* SceneDelegate.swift in Sources */,
+				EC88949E24F7EDC2006DFC69 /* RecentMusicCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
