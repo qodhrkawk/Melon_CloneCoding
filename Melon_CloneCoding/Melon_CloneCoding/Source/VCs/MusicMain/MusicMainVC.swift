@@ -35,7 +35,7 @@ class MusicMainVC: UIViewController {
 extension MusicMainVC : UICollectionViewDelegate , UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 4
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -53,13 +53,7 @@ extension MusicMainVC : UICollectionViewDelegate , UICollectionViewDelegateFlowL
 //            }
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecentMusicCell", for: indexPath) as! RecentMusicCell
-            
-            print("passed")
-            print("passed")
-            print("passed")
-            print("passed")
-            print("passed")
-            
+
             
             return cell
         default:
@@ -72,11 +66,17 @@ extension MusicMainVC : UICollectionViewDelegate , UICollectionViewDelegateFlowL
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
         let width = self.view.frame.width
         let height = self.view.frame.height
+        switch indexPath.section {
+        case 0:
+            return CGSize(width: width, height: 150)
+        default:
+            return CGSize(width: width, height: 200)
+        }
         
-        return CGSize(width: width, height: height/4)
+        
+        
         
         
     }

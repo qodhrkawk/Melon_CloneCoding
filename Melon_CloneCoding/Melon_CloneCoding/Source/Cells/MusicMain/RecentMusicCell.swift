@@ -22,6 +22,7 @@ class RecentMusicCell: UICollectionViewCell {
     
     @IBOutlet weak var RecentInnerCV: UICollectionView! {
         didSet{
+            
             RecentInnerCV.delegate = self
             RecentInnerCV.dataSource = self
             
@@ -37,6 +38,8 @@ class RecentMusicCell: UICollectionViewCell {
 }
 
 
+
+
 extension RecentMusicCell : UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -50,34 +53,33 @@ extension RecentMusicCell : UICollectionViewDelegate {
 extension RecentMusicCell : UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 50, height: 70)
+        return CGSize(width: 80, height: 150)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
     
+    
+    
 }
 
 extension RecentMusicCell : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        //        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecentMusicCVC.identifier, for: indexPath) as? RecentMusicCVC else {
-        //            return UICollectionViewCell()
-        //        }
+
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecentMusicCVC", for: indexPath) as! RecentMusicCVC
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecentMusicCVC.identifier, for: indexPath) as? RecentMusicCVC else {
+            
+            return UICollectionViewCell()}
         
-        print("passed")
-        print("passed")
-        print("passed")
-        print("passed")
-        print("passed")
+        
         
         cell.setItems(albumImageTitle: imgTitles[indexPath.item],
                       musicTitle: musicTitles[indexPath.item], singer: singers[indexPath.item])
-        print("here")
         
         return cell
+        
+        
         
         
     }
@@ -92,5 +94,6 @@ extension RecentMusicCell : UICollectionViewDataSource {
     
     
 }
+
 
 

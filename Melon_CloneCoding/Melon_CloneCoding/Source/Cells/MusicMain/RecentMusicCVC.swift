@@ -19,6 +19,7 @@ class RecentMusicCVC: UICollectionViewCell {
     func setItems(albumImageTitle : String, musicTitle : String, singer : String){
         
         self.albumImage.image = UIImage(named: albumImageTitle)
+        self.albumImage.contentMode = .scaleToFill
         self.musicTitle.text = musicTitle
         self.singer.text = singer
         
